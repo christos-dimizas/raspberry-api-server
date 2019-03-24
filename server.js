@@ -9,6 +9,7 @@ app.get('/', (req, res) => {
 
 app.get('/raspi/buttonLed', (req, res) => {
   buttonLed();
+  res.send('Button led function initiated');
 });
 
 //start a server on port 80 and log its start to our console
