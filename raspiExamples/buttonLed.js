@@ -18,5 +18,6 @@ export default function buttonLed() {
 		pushButton.unexport(); // Unexport Button GPIO to free resources
 	};
 
+	console.log('Example function executed');
 	process.on('SIGINT', unexportOnClose); //function to run when user closes using ctrl+c
 }
