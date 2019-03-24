@@ -1,5 +1,5 @@
 const express = require('express');
-const buttonLed = require('./raspiExamples/buttonLed.js');
+const {buttonLed} = require('./raspiExamples/buttonLed.js');
 const app = express();
 
 // reply to request with "Hello World!"
