@@ -1,5 +1,9 @@
 
-export default function buttonLed() {
+module.exports = {
+	buttonLed,
+};
+
+function buttonLed() {
 	const Gpio = require('onoff').Gpio; //include onoff to interact with the GPIO
 	const LED = new Gpio(4, 'out'); //use GPIO pin 4 as output
 	const pushButton = new Gpio(17, 'in', 'both'); //use GPIO pin 17 as input, and 'both' button presses, and releases should be handled
